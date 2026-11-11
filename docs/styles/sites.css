@@ -1,229 +1,376 @@
-:root{
+:root {
     --myLightColor: #FFFDED;
     --myDarkColor: #0D0106;
     --myBlue: #1B5299;
     --myAccentColor: #93827F;
-    --myFonts:Verdana, Arial, sans-serif;
-    --myBorder:  5px solid var(--myDarkColor);
+    --myFonts: Verdana, Arial, sans-serif;
+    --myBorder: 4px solid var(--myDarkColor);
+    --myDottedBorder: 3px dotted var(--myDarkColor);
+    --bookBorder: 3px solid var(--myDarkColor);
+    --blueHighlighter: rgb(27 82 153 / 0.3);
+    --brownHighlighter: rgb(147 130 127 /0.7);
 }
-body{
+
+body {
     font-family: var(--myFonts);
     background-color: var(--myLightColor);
     color: var(--myDarkColor);
     margin: 0;
 }
-p{
-    font-size: 1.2em;
-}
 
-/* #myLogo{
-    padding-inline-start: 5px;
-    padding-block-start: 5px;
-    width: 90px;
-    height: 90px;
-} **/
 
-#main-nav{
+.main-nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     border: var(--myBorder);
     background-color: var(--myAccentColor);
     color: var(--myLightColor);
-    /* add rule for the links to be displayed like in the media query*/
-
 }
 
 
-#quoteBox{
-    background-color:var(--myBlue);
-    /*width: 500px;*/
-    border: var(--myBorder);
-    box-sizing: border-box;
-
-    p{
-        color: var(--myLightColor);
-        padding-inline-start: 5px;
-    }
-
-    h2{
-        text-align: center;
-        color: var(--myLightColor);
-        padding-inline-start: 20px;
-    }
-
-    h3{
-        color: var(--myLightColor);
-        text-align: center;
-        padding-inline-start: 60px;
-        font-style: italic;
-    }
-}
 
 
-/*#afterQuote p{
-    margin-block-start: 75px;
-    margin-block-end: 100px;
-} **/
 
-/* currently reading page*/
-/*#currentReads{
-    display: grid;
-    grid-auto-flow:column;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-
-    img{
-        margin: 10px 0 10px 20px;
-    }
-}*/
-
-#bookDescription{
-    padding-inline-start: 8px;
-}
-
- 
-/* FIX THE FOOTER THE LINKS SHOULD BE ON THEIR OWN LINES*/
-footer{
-    text-align: center;
-    #footerNav{
-        ul{
-            li{
-                list-style-image: none;
-                display: inline;
-                a{
-                    text-decoration: none;
-                    color: var(--myDarkColor);
-                }
-            }
-        }    
-    }
-}
-
-
-@media (max-width: 768px){
-    #wrapper{
-        #main-nav{
-            nav{
-                ul{
-                    li{
+@media (max-width: 768px) {
+    .wrapper {
+        .main-nav {
+            nav {
+                ul {
+                    li {
                         display: inline;
                         list-style-image: none;
-                        a{
-                            font-family: sans-serif;
+
+                        a {
                             text-decoration: none;
                             color: var(--myDarkColor);
                             font-weight: bolder;
-                            padding-inline: 10px;
-                        }
-                        .not-mobile{
-                            display:none;
+                            font-variant: small-caps;
+                            padding-inline-end: 3vw;
                         }
                     }
                 }
+
+                .not-mobile {
+                    display: none;
+                }
             }
 
-            #myLogo{
+            #myLogo {
                 width: 7vw;
                 height: 7vw;
             }
         }
-        #home-page{
-            display: grid;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas:
-                "header"
-                "content-one"
-                "content-two"
-                "footer";
-            #main-nav{
-                grid-area: header;
-                ul{
-                    grid-area: header'
+
+        #home-page {
+
+            #welcome {
+                margin-inline: 2vw;
+
+                img {
+                    width: 35vw;
+                    height: 23vw;
+                    float: left;
+                    margin-inline-end: 1vw;
                 }
-            }
-            
-            #welcome{
-                grid-area: content-one;
-                margin-inline-start: 2vw;
-                p{
+
+                p {
                     font-size: 1em;
                 }
             }
 
-            #quoteBox{
-                grid-area: content-two;
-                margin-inline-start: 3vw;
-                margin-inline-end: 3vw;
+            #quoteBox {
+                margin-inline: 3vw;
+                margin-block: 10vw;
+                background: linear-gradient(var(--blueHighlighter), var(--brownHighlighter));
+                border: var(--myBorder);
+                box-sizing: border-box;
+                color: var(--myDarkColor);
+
+                p {
+                    padding-inline-start: 5px;
+                }
+
+                h2 {
+                    text-align: center;
+                    padding-inline-end: 2vw;
+                }
+
+                h3 {
+                    font-style: italic;
+                    padding-inline-start: 2vw;
+                }
             }
-            #afterQuote{
-                grid-area: content-two;
-                p{
+
+            #about-author {
+
+                img {
+                    width: 27vw;
+                    height: 37vw;
+                    padding-inline: 2vw;
+                    float: right;
+                }
+
+                h4 {
+                    margin-inline: 2vw;
+                }
+
+                p {
                     font-size: 1em;
-                    margin-inline-start: 3vw;
+                    margin-inline: 2vw;
+                    margin-block-end: 5vw;
+                }
+
+            }
+
+        }
+
+        footer {
+            text-align: center;
+
+            .image-sources {
+                ul {
+                    font-size: 0.9em;
+                    list-style-type: square;
+
+                    li {
+                        a {
+                            text-decoration: underline;
+                            color: var(--myBlue);
+
+                        }
+                    }
+                }
+            }
+
+            .footerNav {
+                li {
+                    display: inline;
+                    background-color: var(--myAccentColor);
+                    border: 2px solid var(--myAccentColor);
+                    box-sizing: border-box;
+                    border-radius: 8px;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--myDarkColor)
+                    }
                 }
             }
         }
 
-        footer{
-            grid-area: footer;
+
+        #currentlyReading-page {
+
+            #currentReads {
+
+                img:nth-of-type(odd) {
+                    float: left;
+                }
+
+                img:nth-of-type(even) {
+                    float: right;
+                }
+
+                p:nth-of-type(odd) {
+                    span {
+                        background-color: var(--blueHighlighter);
+                    }
+                }
+
+                p:nth-of-type(even) {
+                    span {
+                        background-color: var(--brownHighlighter);
+                    }
+                }
+
+                .book-picture {
+                    align-content: space-evenly;
+
+                }
+
+                .title-and-author {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+
+                .synopsis {
+                    margin-inline: 1vw;
+                    font-size: 1em;
+                }
+            }
+
         }
 
-        #currentlyReading-page{
-            display: grid;
-            grid-template-rows: auto auto auto;
-            grid-template-areas:
-                "header"
-                "content"
-                "footer";
+        .book-picture {
+            margin: 2vw;
+            width: 37vw;
+            height: auto;
+            border: var(--bookBorder);
+        }
 
-                #main-nav{
-                    grid-area: header;
-                    ul{
-                        grid-area: header;
+        #review-page {
+            .main-nav {
+                margin-block-end: 2vw;
+            }
+
+            main {
+                .title-and-author {
+                    display: inline;
+                    font-size: 1.2em;
+                }
+
+                div:nth-of-type(odd) {
+                    img {
+                        float: left;
+                    }
+
+                    .title-and-author {
+                        background-color: var(--blueHighlighter);
+                    }
+
+                    .review {
+                        background-color: var(--blueHighlighter);
                     }
                 }
-            
-                #currentReads{
-                    display: grid;
-                    grid-template-rows: auto auto auto;
-                    grid-template-columns: auto auto;
-                    grid-template-areas:
-                        "book-picture1 description1"
-                        "book-picture2 description2"
-                        "book-picture3 description3";
 
-                    #firstBook{
-                        grid-area: book-picture1;
+                div:nth-of-type(even) {
+                    img {
+                        float: right;
                     }
-                    #firstDescription{
-                        grid-area: description1;
-                    }
-                    #secondBook{
-                        grid-area: book-picture2;
-                    }
-                    #secondDescription{
-                        grid-area: description2;
-                    }
-                    #thirdBook{
-                        grid-area: book-picture3;
-                    }
-                    #thirdDescription{
-                        grid-area: description3;
-                    }
-                    .book-pics{
-                        margin: 2vw;
-                        width: 20vw;
-                        height: auto;
 
+                    .title-and-author {
+                        background-color: var(--brownHighlighter);
                     }
-                    .bookDescriptions{
-                        padding-block: 2vw;
-                        margin-inline-end: 5vw;
-                        font-size: 0.9em;
+
+                    .review {
+                        background-color: var(--brownHighlighter);
                     }
                 }
-        } 
+
+                .review {
+                    margin: 2vw;
+                    border: var(--myDottedBorder);
+                    box-sizing: border-box;
+                    padding: 2vw;
+
+                    span::before {
+                        font-weight: bold;
+                        content: "My review: ";
+                    }
+                }
+
+            }
+
+        }
+
+        #explore-page {
+            main {
+
+                p {
+
+                    font-size: 1em;
+                    margin-inline: 2vw;
+                }
+
+                #author-list {
+                    margin: 0 2vw 10vw;
+                    padding-inline: 1vw;
+                    background: linear-gradient(var(--brownHighlighter), var(--blueHighlighter));
+                    border: var(--myDottedBorder);
+                    box-sizing: border-box;
+                    box-shadow: 3vw 3vw 3vw var(--myDarkColor);
+
+                    p {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+
+                    dt::before {
+                        content: "➞";
+                    }
+
+                    dd::before {
+                        content: "↳";
+                    }
+                }
+
+                #book-list {
+                    margin-inline: 2vw;
+                    padding: 1vw;
+                    background: linear-gradient(var(--blueHighlighter), var(--brownHighlighter));
+                    border: var(--myDottedBorder);
+                    box-sizing: border-box;
+                    box-shadow: 3vw 3vw 3vw var(--myDarkColor);
+
+                    p {
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+
+                    dt::before {
+                        content: "➞";
+                    }
+
+                    dd {
+                        font-size: 0.8em;
+
+                        ::before {
+                            content: "↳";
+                        }
+                    }
+                }
+            }
+
+        }
+
+        #about-page {
+
+            main {
+                grid-area: content;
+
+                h1 {
+                    text-align: center;
+                }
+
+                h2 {
+                    padding-inline: 2vw;
+                }
+
+                p {
+                    line-height: 2;
+                    padding-inline: 2vw;
+                    margin-block-end: 10vw;
+                }
+            }
+
+        }
+
+        #contact-page {
+            main {
+                margin-inline: 2vw;
+
+                a {
+                    color: var(--myBlue);
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin-block-end: 20vw;
+                }
+
+                #elsewhere {
+                    padding-inline: 2vw;
+                    background: linear-gradient(var(--blueHighlighter), var(--brownHighlighter));
+                    border: 3px dashed var(--myDarkColor);
+                    box-sizing: border-box;
+                    box-shadow: 3vw 3vw 3vw var(--myDarkColor);
+                    margin-block-end: 100vw;
+                }
+            }
+        }
+
     }
-    
+
 }

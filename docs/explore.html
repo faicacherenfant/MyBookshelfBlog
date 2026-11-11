@@ -1,32 +1,94 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\sites.css">
+    <link rel="stylesheet" href="styles/sites.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Explore</title>
-
 </head>
 
 
 <body>
-   <div id="topBar">
-        <header>
-            <img id= "myLogo" src="images/myBookshelfLogo.png" alt="Books on a shelf">
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</li>
-                <li><a href="currentlyReading.html">Currently Reading</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="aboutMe.html">About Me</a></li>
-                <li><a href="ContactMe.html">Contact Me</a></li>
-            </ul>
-        </nav> 
+    <div class="wrapper">
+        <div id="explore-page">
+            <div class="main-nav">
+                <header>
+                    <img id="myLogo" src="images/myBookshelfLogo.png" alt="Books on a shelf">
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a class="not-mobile" href="explore.html">Explore</a></li>
+                        <li><a class="not-mobile" href="about.html">About</a></li>
+                        <li><a class="not-mobile" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <main>
+                <p> If you are looking for book and/or author recommendations, I have compiled lists
+                    of authors and books I really love. If you do check them out, feel free to contact
+                    me and tell me what you think! I would love to hear your thoughts!
+                </p>
+
+                <div id="author-list">
+                    <p>Authors i recommend</p>
+                    <dl>
+                        <dt>Paulo Coelho</dt>
+                        <dd>genres: literary fiction, philosophical fiction, mystical fiction</dd>
+                        <dt>Albert Camus</dt>
+                        <dd>genres: philosophical fiction, philosophical essays</dd>
+                        <dt>David Foenkinos</dt>
+                        <dd>genres: romantic comedy, fiction, historical fiction</dd>
+                        <dt>James Baldwin</dt>
+                        <dd>genres: African-American literature, urban fiction, non-fiction, poetry</dd>
+                    </dl>
+                </div>
+
+                <div id="book-list">
+                    <p>Books I recommend:</p>
+                    <dl>
+                        <dt>The Catcher in the Rye by J.D. Salinger</dt>
+                        <dd><strong>Trigger warning: violence, sexual harrasment, slurs</strong></dd>
+                        <dt>The Plague by Albert Camus</dt>
+                        <dd><strong>Trigger warning: death, suicide</strong></dd>
+                        <dt>Promise Boys by Nick Brooks</dt>
+                        <dd><strong>Trigger warning: racism, gun violence, murder</strong></dd>
+                        <dt>Aristotle and Dante Discover the Secrets of the Universe by Benjamin Alire Sáenz</dt>
+                        <dd><strong>Trigger Warning: homophobia, death, substance use, death</strong></dd>
+                        <dt>La Vie Princière by Marc Pautrel</dt>
+                        <dt>Love in the Time of Cholera by Gabriel García Márquez</dt>
+                        <dd><strong>Trigger Warning: suicide, sexual assault, incest</strong></dd>
+                        <dt>Rooftops of Tehran by Mahbod Seraji</dt>
+                        <dd><strong>Trigger Warning: death, suicide attempt, violence</strong></dd>
+                        <dt>The stranger by Albert Camus</dt>
+                        <dd><strong>Trigger Warning: murder</strong></dd>
+                        <dt>All My Rage by Sabaa Tahir</dt>
+                        <dd><strong>Trigger Warning: racism, islamophobia, abuse, violence, sexual assault, adiction,
+                                alcoholism, death</strong></dd>
+                    </dl>
+                </div>
+
+            </main>
+            <footer>
+                <nav class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </div>
-    <div>
-        <p> If you are looking for something(s) to read, here are a few suggestions.</p>
-    </div>
+
 </body>
 
 </html>

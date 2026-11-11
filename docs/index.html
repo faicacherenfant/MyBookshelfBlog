@@ -4,49 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\sites.css">
+    <link rel="stylesheet" href="styles/sites.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>My Bookshelf</title>
-
 </head>
 
 
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <div id="home-page">
-            <div id="main-nav">
+            <div class="main-nav">
                 <header>
-                    <img id="myLogo" src="images/myBookshelfLogo.png" alt="Books on a shelf with the text 'my bookshelf' written below it.">
+                    <img id="myLogo" src="images/myBookshelfLogo.png"
+                        alt="Books on a shelf with the text 'my bookshelf' written below it.">
                 </header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="currentlyReading.html">Currently Reading</a></li>
-                    <li><a class="not-mobile" href="explore.html">Explore</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li><a class="not-mobile" href="contactMe.html">Contact Me</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a class="not-mobile" href="explore.html">Explore</a></li>
+                        <li><a class="not-mobile" href="about.html">About</a></li>
+                        <li><a class="not-mobile" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        
+
             <main>
                 <section id="welcome">
                     <h1>
                         Welcome to My Bookshelf!
                     </h1>
+                    <img src="images/books-open.jpg" alt="multiple open books layed out and overlapping each other.">
                     <p>
                         As you have probably already inferred from the name,
-                        this blog is basically a digital library. I have always 
-                        enjoyed reading and discussing the books I('ve) read. The idea 
-                        to create a blog about the books I read came to me in 2021. 
-                        But I officially began blogging in 2023. This blog isn't just   a
+                        this blog is basically a digital library. I have always
+                        enjoyed discussing the books I('ve) read. The idea
+                        to create a blog about the books I read came to me in 2021.
+                        But I officially began blogging in 2023. This blog isn't just a
                         place for me to share and keep track of the books I
-                        have read and the ones I am currently reading. The reason why I 
-                        created this blog is to share the joy of reading and encourage 
-                        others to pick up books. This blog is not only for readers, it is for 
+                        have read and the ones I am currently reading. The reason why I
+                        created this blog is to share the joy of reading and encourage
+                        others to pick up books. This blog is not only for readers, it is for
                         anyone and everyone. I hope we can enjoy this new chapter together!
                     </p>
                 </section>
-
                 <section id="quoteBox">
                     <p>Here's a quote: </p>
                     <h2>
@@ -57,23 +59,44 @@
                         - Oscar Wilde, The picture of Dorian Gray
                     </h3>
                 </section>
-                <section id="afterQuote">
+                <section id="about-author">
+                    <img src="images/oscar-wilde.jpg"
+                        alt="Black and white picture of a white man in a fur lined coat and hat">
+                    <h4>
+                        Oscar Wilde (October 16, 1854 - November 30, 1990)
+                    </h4>
                     <p>
-                        I hope you like my blog, have fun looking through it!
+                        Irish author, poet and dramatist. He was notable figure in the Aestheticism movemen and is
+                        regarded as
+                        one of the best dramatist of the victorian era. Wilde is best known for his novel The Picture of
+                        Dorian
+                        Gray, his plays and his bedtime stories for kids.
                     </p>
                 </section>
             </main>
 
             <footer>
-            <nav id="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="currentlyReading.html">Currently Reading</a></li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="aboutMe.html">About Me</a></li>
-                    <li><a href="contactMe.html">Contact Me</a></li>
-                </ul>
-            </nav>
+                <div class="image-sources">
+                    <p>Image Sources:</p>
+                    <ul>
+                        <li><a href="https://unsplash.com/photos/pile-of-open-paperback-books-LUGuCtvlk1Q"
+                                target="_blank">If it was possible, I would plant a book like wheat on every inch of
+                                land. by user @gulfergin_01</a></li>
+                        <li><a href="https://unsplash.com/photos/man-in-fur-lined-coat-and-hat-PFSliqIuQxc"
+                                target="_blank">Billy Rose Theatre Division. "Oscar Wilde" The New York Public Library
+                                Digital Collections</a></li>
+                    </ul>
+                </div>
+                <nav class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
             </footer>
         </div>
     </div>

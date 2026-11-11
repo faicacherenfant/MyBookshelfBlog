@@ -1,81 +1,106 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\sites.css">
+    <link rel="stylesheet" href="styles/sites.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Currently Reading</title>
-
 </head>
 
 
 <body>
-    <div id="wrapper">
+    <div class="wrapper">
         <div id="currentlyReading-page">
-            <div id="main-nav">
+            <div class="main-nav">
                 <header>
-                    <img id= "myLogo" src="images/myBookshelfLogo.png" alt="Books on a shelf with the text 'my bookshelf' written below it.">
+                    <img id="myLogo" src="images/myBookshelfLogo.png"
+                        alt="Books on a shelf with the text 'my bookshelf' written below it.">
                 </header>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</li>
-                        <li><a href="currentlyReading.html">Currently Reading</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
                         <li><a class="not-mobile" href="explore.html">Explore</a></li>
-                        <li><a href="aboutMe.html">About Me</a></li>
-                        <li><a class="not-mobile" href="ContactMe.html">Contact Me</a></li>
+                        <li><a class="not-mobile" href="about.html">About</a></li>
+                        <li><a class="not-mobile" href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
 
             <main id="currentReads">
-                <img id="firstBook" class ="book-pics" src="images/leComteDeMonteCristo.jpg">
-                <p id="firstDescription" class="book-descriptions">
-                    Comment devenir comte de Monte-Cristo quand on est simple marin?
-                    Ce roman est le récit d'une extraordinaire métamorphose.
-                    Espérant modestement debenir capitaine, Edmond Dantès se heurte
-                    pourtant à la conspiration la plus lâche. Dans les geôles du 
-                    château d'If, ou il a été injustement jeté, Edmond entame la mue 
-                    d'un être rivé à la plus dévorante des passions: la vengeance. 
-                    Innocent décrété coupable par les calculs de ses ennemis et le 
-                    cynisme de toute une époque, Dantès ne s'en laissera plus conter: à 
-                    lui intrigues et dissimulation. Pour faire tomber les masques il lui 
-                    faudra s'en forger un, pétri dans la rancoeur des années perdues. 
-                    Palpitant roman d'aventures, devenu le modèle du genre, cette traversée 
-                    épique du XIX eme siècle précipite les personnages de Marseille à Paris en
-                    passant par Rome et la Méditerranée. Le Comte de Monte-Cristo répond aux 
-                    mesquineries du siècle par le souffle d'une odyssée.
+                <img class="book-picture" src="images/leComteDeMonteCristo.jpeg"
+                    alt="Cover of The Count of Monte Cristo">
+                <p class="synopsis">
+                    <span class="title-and-author">Le Comte de Monte Cristo (The Count of Monte Cristo) by Alexandre
+                        Dumas:</span><br>
+                    Edmond Dantès, a young sailor with a promising future is falsely accused of treason and sent to
+                    prison.
+                    While in prison, he meets a fellow inmate, Abbé Faria and older man who he begins to view as a
+                    mentor.
+                    Abbé tells Edmond about a treasure hidden on the island of Monte Cristo. Edmond ends up escaping
+                    the prison and finds the treasure. He uses the treasure to transform into a count and get revenge
+                    on the people who falsely accused him.
                 </p>
+                <hr>
 
-                <img id="secondBook" class ="book-pics" src="images/lavalee des avales.jpeg">
-                <p id="secondDescription" class="book-descriptions">
-                    «Tout m'avale... Je suis avalée par le fleuve trop grand, par le ciel trop 
-                    haut, par les fleurs trop fragiles, par les papillons trop craintifs, par 
-                    le visage trop beau de ma mère...»Les enfants en mènent large. Ils peuvent 
-                    dire pis qu'aimer, pis que pendre. Ils ont tous les droits Entre vingt et 
-                    vingt-trois ans (l'âge de ce roman), on a toutes les lois, toutes en même 
-                    temps. Si on est doué, on les apprend. Si on est pas content, on se déprend, 
-                    en se souvenant, en imaginant.
+                <img class="book-picture" src="images/lavalee-des-avales.jpeg" alt="cover of L'avalée des avalés">
+                <p class="synopsis">
+                    <span class="title-and-author">L'avalée des avalés (The Swallower swallowed) by Réjean
+                        Ducharme:</span><br>
+                    Bérénice and her brother Christian are born into a very tumultuous family. Their mother is Catholic
+                    and
+                    their father is Jewish. Their parents divide the children between them so Bérénice is raised Jewish
+                    and
+                    Christian is raised Catholic. Despite their parents' toxic relationship, Bérénice and her brother
+                    are really close. But only Bérénice is brave enough to confront and rebel against, and her defiance
+                    has consequences.
                 </p>
+                <hr>
 
-                <img id="thirdBook" class ="book-pics" src="images/mais que fait ce sang sur le pull de jennifer.png">
-                <p id="thirdDescription" class="book-descriptions">
-                    Mais que fait ce sang sur le pull de Jennifer ? Pour me reconstituer moi-même, 
-                    j'ai suivi la procédure réservée aux affaires criminelles.
+                <img class="book-picture" src="images/lucie-Rico-Book.png"
+                    alt="cover of Mais que fait ce sang sure le pull de Jennifer">
+                <p class="synopsis">
+                    <span class="title-and-author">Mais que fait ce sang sur le pull de Jennifer? by Lucie
+                        Rico:</span><br>
+                    Everything was going fine for Jennifer, until she began thinking of a phrase that she can't seem to
+                    complete.
+                    She reaches out to her family for help but that doesn't help much. With this unfinished phrase
+                    haunting her,
+                    Jennifer decides to dig into her past and find the missing words. As she digs deeper, the truth
+                    begins to blur
+                    and she begins to lose herself.
                 </p>
+                <hr>
             </main>
 
             <footer>
-                <nav id="footerNav">
+                <div class="image-sources">
+                    <p>Image sources:</p>
+                    <ul>
+                        <li><a href="https://www.leslibraires.ca/livres/comte-de-monte-cristo-le-t-alexandre-dumas-9782070405374.html"
+                                target="_blank">"Le Comte de Monte Cristo" cover</a></li>
+                        <li><a href="https://www.leslibraires.ca/livres/l-avalee-des-avales-rejean-ducharme-9782070373932.html"
+                                target="_blank">"L'Avalée des avalés" cover</a></li>
+                        <li><a href="https://www.leslibraires.ca/livres/mais-que-fait-ce-sang-sur-le-pull-de-jennifer-9782818060636"
+                                target="_blank">"Mais que fair ce sang sur le pull de Jennifer?" Cover</a></li>
+                    </ul>
+                </div>
+                <nav class="footerNav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="currentlyReading.html">Currently Reading</a></li>
+                        <li><a href="currentlyReading.html">Reading</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="explore.html">Explore</a></li>
-                        <li><a href="aboutMe.html">About Me</a></li>
-                        <li><a href="contactMe.html">Contact Me</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </footer>
-        </div> 
+        </div>
     </div>
 </body>
+
 </html>
